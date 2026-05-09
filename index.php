@@ -1,6 +1,6 @@
 <?php
 
-// $domain = 'http://192.168.1.5/romansa-travel.web.id/';
+// $domain = 'http://localhost/romansa-travel.web.id/';
 $domain = 'https://romansa-travel.web.id/';
 $brand = 'Travel bersama Romansa Travel';
 // $logoShared = 'src/img/harga-travel.jpg';
@@ -8,7 +8,7 @@ $logo = 'src/img/Logo-Romansa-Trans.webp';
 $logoPanjang = 'src/img/Logo-Romansa-Trans.webp';
 $title = $brand . " - Rute Travel Rembang Bojonegoro Tuban Lamongan Surabaya Malang.";
 $desc = $brand . ", kami menawarkan Travel di daerah Jawa Timur, terutama pada rute travel rembang bojonegoro tuban lamongan surabaya malang.";
-$telp = '0882-4252-8050';
+$telp = '0857-8526-3297';
 // $telp2 = '0857-9190-4615';
 $alamat = 'Keben, Kebonharjo, Kec. Jatirogo, Kabupaten Tuban, Jawa Timur';
 
@@ -25,11 +25,15 @@ $res_telp2 = isset($telp2) ? res_telp($telp2) : null;
 $link_telp = 'tel:' . $res_telp;
 $link_telp2 = isset($telp2) ? 'tel:' . $res_telp : null;
 $link_whatsapp = 'https://wa.me/' . res_telp($telp) .
-  '?text=' . urlencode('Halo admin ' . $brand);
+  '?text=' . urlencode('Halo admin, saya ingin pesan ' . $brand . '.
+  
+  ' . $domain);
 
 $link_whatsapp2 = isset($telp2)
   ? 'https://wa.me/' . res_telp($telp2) .
-  '?text=' . urlencode('Halo admin ' . $brand)
+  '?text=' . urlencode('Halo admin, saya ingin pesan ' . $brand . '.
+  
+  ' . $domain)
   : null;
 
 $menu = [
